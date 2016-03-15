@@ -14,12 +14,29 @@
         width:500px;
         height:500px;
         border: 1px solid #ccc;
-        margin:200px auto;
+        margin:200px auto 0;
+    }
+    .info{
+        width:500px;
+        margin: 20px auto 0;
+        font-size:20px;
+    }
+    .info button{
+        padding:20px;
+    }
+    .info input{
+        padding:10px;
+        font-size:20px;
     }
 </style>
 
 <body>
     <canvas id="particles"></canvas>
+    <div class="info">
+        <button data-src="demo.jpg" id="useImg" onclick="useImg()">使用图片</button>
+        <button id="useText" onclick="useText()">使用文字</button>
+        <input id="inputText" type="text" value="helloworld">
+    </div>
     <script type="text/javascript" src="Stats.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
